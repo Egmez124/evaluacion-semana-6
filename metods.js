@@ -1,5 +1,5 @@
 //Declaramos un array para poder ejecutar los métodos.
-const array = [1, 2, 3, 4, 5, 6]
+const array = [1, 2, 3, 4, 5, 6];
 //const array2 = ['uno', 'dos', 'tres', 'cuatro', 'cinco']
 //forEach
 //Declaramos la función myEach que lo que va a hacer es recoorer cada unos de los elementos y retornar cada elemento del array.
@@ -53,21 +53,15 @@ console.log(resultIndex); */
 const result = myMap(array, newElement => newElement*5);
 console.log(result); */
 //Contains: Retorna verdadero o falso si el valor esta presente en el arreglo
-function myContains(array, value) {
-    const newarray = array.filter(elemento=> elemento ===value)
-    if(newarray===value){
-        return true;
-    } else {
-        return false;
-    }
-    /* for(let i = 0; i < array.length; i++) {
-        if(array[i] === value){
+const numeros = [1, 3, 4, 5, 6];
+function contains(array, value) {
+    for(let i = 0; i<array.length; i++){
+        if(array[i]===value){
             return true
         } else {return false}
-    } */
-    return newarray;
+    }
 }
-const result = myContains(array, 2);
+const result = contains(numeros,1)
 console.log(result);
 //Pluck: Resive un array y una propiedad pra que regrese un arreglo con los elementos que contiene la propiedad de
 //los objetos del array principal.
